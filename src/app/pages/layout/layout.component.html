@@ -1,0 +1,57 @@
+<!-- <nav class="nav">
+  <h1>E-COMM</h1>
+  <div class="nav-search">
+    <input type="text" placeholder="search for product">
+    <button>search</button>
+  </div>
+  <ul>
+    <li><a routerLink="/home/dashboard" routerLinkActive="router-link-active" >Home</a></li>
+
+    <li><a routerLink="/add-product">add-product</a></li>
+    <li><a routerLink="/product-list">product-list</a></li>
+    <li><a routerLink="/cart">cart</a></li>
+    <li (click)="onLogoutClicked()"> Logout</li>
+
+  </ul>
+</nav>
+
+ --><nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">E-COMM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home/dashboard" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/add-product" routerLinkActive="active">Add Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/product-list" routerLinkActive="active">Product List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart" routerLinkActive="active">Cart</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav">
+        <form class="form-inline">
+          <div class="input-group">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for product" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+
+        <li class="nav-item">
+          <a class="nav-link" (click)="onLogoutClicked()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

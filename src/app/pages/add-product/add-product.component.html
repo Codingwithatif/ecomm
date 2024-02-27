@@ -1,0 +1,59 @@
+<!-- <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" formControlName="name" id="name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea formControlName="description" id="description" class="form-control"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" formControlName="price" id="price" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="product-img">Product Image</label>
+    <input type="file" id="product-img" (change)="onImageSelect($event)" accept="image/*">
+
+  </div>
+  <div class="form-group">
+    <label for="quantity">Quantity</label>
+    <input type="number" formControlName="quantity" id="quantity" class="form-control" min="0">
+  </div>
+  <button type="submit" class="btn btn-primary">Add Product</button>
+</form> -->
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()" class="bg-dark text-light p-4 rounded">
+  <div class="form-group">
+    <label for="brand">Brand</label>
+    <input type="text" formControlName="brand" id="brand" class="form-control bg-dark text-light border-light" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label for="category">Category</label>
+    <textarea formControlName="category" id="category" class="form-control bg-dark text-light border-light" autocomplete="off"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    <textarea formControlName="description" id="description" class="form-control bg-dark text-light border-light" autocomplete="off"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="discountPercentage">Discount Percentage</label>
+    <input type="number" formControlName="discountPercentage" id="discountPercentage" class="form-control bg-dark text-light border-light" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label for="price">Price</label>
+    <input type="number" formControlName="price" id="price" class="form-control bg-dark text-light border-light" min="0" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label for="rating">Rating</label>
+    <input type="number" formControlName="rating" id="rating" class="form-control bg-dark text-light border-light" min="0" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label for="stock">Stock</label>
+    <input type="number" formControlName="stock" id="stock" class="form-control bg-dark text-light border-light" min="0" autocomplete="off">
+  </div>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" formControlName="title" id="title" class="form-control bg-dark text-light border-light" min="0" autocomplete="off">
+  </div>
+  <button type="submit" class="btn btn-primary">Add Product</button>
+</form>

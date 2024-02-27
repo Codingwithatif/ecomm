@@ -1,0 +1,31 @@
+<!-- <div class="card" *ngFor="let product of cartProduct">
+  <div  class="card-body" >
+
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <p class="card-text">Price: ${{ product.price }}</p>
+    <p class="card-text">Rating: {{ product.rating }}</p>
+    <p class="card-text">Stock: {{ product.stock }}</p>
+
+    <button class="btn btn-danger">Remove from Cart</button>
+  </div>
+</div> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let product of cartProduct">
+      <div class="card bg-dark text-light mb-5" style="border: 2px solid #fff;">
+        <div class="card-body p-4">
+          <h5 class="card-title">{{ product.title }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p class="card-text"><strong>Price:</strong> ${{ product.price }}</p>
+          <p class="card-text"><strong>Rating:</strong> {{ product.rating }}</p>
+          <p class="card-text"><strong>Stock:</strong> {{ product.stock }}</p>
+          <!-- Add more details as needed -->
+          <!-- <button class="btn btn-danger btn-block mt-3 rounded-pill" (click)="removeFromCart(product)">Remove from Cart</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

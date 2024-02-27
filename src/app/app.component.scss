@@ -1,0 +1,7 @@
+.nav {
+  display: none; /* Initially hide the navbar */
+}
+
+.nav.show {
+  display: block; /* Show the navbar when the 'show' class is added */
+}

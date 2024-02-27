@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": "35b2",
+      "brand": "nokia",
+      "category": "phone",
+      "description": "best phone ever",
+      "discountPercentage": 200,
+      "price": 1000,
+      "rating": 4,
+      "stock": 12,
+      "thumbnail": "",
+      "title": "industries"
+    },
+    {
+      "id": "40f7",
+      "brand": "gelexy",
+      "category": "leptop",
+      "description": "kdfuiawfsh",
+      "discountPercentage": 20,
+      "price": 200,
+      "rating": 3,
+      "stock": 50,
+      "thumbnail": "",
+      "title": "leptops"
+    },
+    {
+      "id": "b1b2",
+      "brand": "tesla",
+      "category": "car",
+      "description": "best car manufecturing",
+      "discountPercentage": 200,
+      "price": 500,
+      "rating": 4,
+      "stock": 200,
+      "thumbnail": "",
+      "title": "industry"
+    }
+  ],
+  "cartProduct": [
+    {
+      "id": "35b2",
+      "brand": "nokia",
+      "category": "phone",
+      "description": "best phone ever",
+      "discountPercentage": 200,
+      "price": 1000,
+      "rating": 4,
+      "stock": 12,
+      "thumbnail": "",
+      "title": "industries"
+    },
+    {
+      "id": "40f7",
+      "brand": "gelexy",
+      "category": "leptop",
+      "description": "kdfuiawfsh",
+      "discountPercentage": 20,
+      "price": 200,
+      "rating": 3,
+      "stock": 50,
+      "thumbnail": "",
+      "title": "leptops"
+    },
+    {
+      "id": "35b2",
+      "brand": "nokia",
+      "category": "phone",
+      "description": "best phone ever",
+      "discountPercentage": 200,
+      "price": 1000,
+      "rating": 4,
+      "stock": 12,
+      "thumbnail": "",
+      "title": "industries"
+    },
+    {
+      "id": "35b2",
+      "brand": "nokia",
+      "category": "phone",
+      "description": "best phone ever",
+      "discountPercentage": 200,
+      "price": 1000,
+      "rating": 4,
+      "stock": 12,
+      "thumbnail": "",
+      "title": "industries"
+    },
+    {
+      "id": "b1b2",
+      "brand": "tesla",
+      "category": "car",
+      "description": "best car manufecturing",
+      "discountPercentage": 200,
+      "price": 500,
+      "rating": 4,
+      "stock": 200,
+      "thumbnail": "",
+      "title": "industry"
+    },
+    {
+      "id": "40f7",
+      "brand": "gelexy",
+      "category": "leptop",
+      "description": "kdfuiawfsh",
+      "discountPercentage": 20,
+      "price": 200,
+      "rating": 3,
+      "stock": 50,
+      "thumbnail": "",
+      "title": "leptops"
+    }
+  ]
+}
