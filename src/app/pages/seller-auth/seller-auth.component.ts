@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
   styleUrl: './seller-auth.component.scss'
 })
 export class SellerAuthComponent {
-
+//sdjkf
 
 // formgroup: FormGroup;
 
