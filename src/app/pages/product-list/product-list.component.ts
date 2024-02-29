@@ -21,10 +21,6 @@ onAddtoCart(product: any) {
 }
 productForm: any;
 
-
-//aziz khan
-
-
 products: any[] = [] ;
   router: any;
 
@@ -45,23 +41,3 @@ navigateToAddProduct() {
   this.router.navigate(['/add-product']);
 }
 }
-
-
-
-// import { Component, OnInit } from '@angular/core';
-
-// @Component({
-//   selector: 'app-product-list',
-//   templateUrl: './product-list.component.html',
-//   styleUrls: ['./product-list.component.css']
-// })
-// export class ProductListComponent implements OnInit {
-//   products: { name: string; description: string; price: number; ... }[] = [];
-
-//   constructor() {}
-
-//   ngOnInit() {
-//     // Retrieve product data from central storage (e.g., service, array)
-//     this.products = [...(sessionStorage.getItem('products') ? JSON.parse(sessionStorage.getItem('products')!) : [])];
-//   }
-// }

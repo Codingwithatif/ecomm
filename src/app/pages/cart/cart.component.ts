@@ -25,7 +25,4 @@ ngOnInit(): void {
   })
 }
 cartProduct: any;
-
-
-
 }
