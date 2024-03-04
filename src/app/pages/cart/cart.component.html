@@ -9,7 +9,7 @@
           <p class="card-text"><strong>Rating:</strong> {{ product.rating }}</p>
           <p class="card-text"><strong>Stock:</strong> {{ product.stock }}</p>
           <!-- Add more details as needed -->
-          <button class="btn btn-danger btn-block mt-3 rounded-pill" (click)="removeFromCart(product)">Remove from Cart</button>
+          <button class="btn btn-danger btn-block mt-3 rounded-pill" (click)="removeFromCart(product.id)">Remove from Cart</button>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -9,11 +9,9 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './add-product.component.html',
   styleUrl: './add-product.component.scss'
 })
-export class AddProductComponent {
+export class AddProductComponent  implements OnInit {
   selectedImages: unknown[] | undefined;
   productService: any;
-
-
 
   productForm: any;
   constructor(private formBuilder: FormBuilder) {
@@ -30,6 +28,16 @@ export class AddProductComponent {
 
     });
   }
+
+  categories: [] = []
+  ngOnInit(): void {
+    fetch('http://localhost:3000/categories')
+    .then(resp => resp.json())
+    .then(data => {
+      this.categories = data
+    })
+
+  }
   onSubmit() {
     console.log(this.productForm.value);
     fetch('http://localhost:3000/products', {
@@ -38,13 +46,8 @@ export class AddProductComponent {
   body: JSON.stringify(this.productForm.value)
 })
 .then(res => res.json())
-.then(console.log);
-
-  }
-
-
-
-  }
+}
+}
   interface IProduct {
     name: string;
     description: string;

@@ -1,114 +1,61 @@
 {
   "products": [
     {
-      "id": "35b2",
-      "brand": "nokia",
-      "category": "phone",
-      "description": "best phone ever",
+      "id": "b79f",
+      "brand": "iphone",
+      "category": "Groceries & Pets",
+      "description": "best phone",
       "discountPercentage": 200,
-      "price": 1000,
-      "rating": 4,
-      "stock": 12,
+      "price": 200000,
+      "rating": 5,
+      "stock": 2000,
       "thumbnail": "",
-      "title": "industries"
+      "title": "best device for sell"
     },
     {
-      "id": "40f7",
-      "brand": "gelexy",
-      "category": "leptop",
-      "description": "kdfuiawfsh",
-      "discountPercentage": 20,
-      "price": 200,
-      "rating": 3,
-      "stock": 50,
-      "thumbnail": "",
-      "title": "leptops"
-    },
-    {
-      "id": "b1b2",
-      "brand": "tesla",
-      "category": "car",
-      "description": "best car manufecturing",
+      "id": "f63e",
+      "brand": "bmw",
+      "category": "Mens Fashion",
+      "description": "best car ever",
       "discountPercentage": 200,
-      "price": 500,
-      "rating": 4,
+      "price": 300000,
+      "rating": 5,
       "stock": 200,
       "thumbnail": "",
-      "title": "industry"
+      "title": "brander car"
     }
   ],
   "cartProduct": [
     {
-      "id": "35b2",
-      "brand": "nokia",
-      "category": "phone",
-      "description": "best phone ever",
+      "id": "b79f",
+      "brand": "iphone",
+      "category": "Groceries & Pets",
+      "description": "best phone",
       "discountPercentage": 200,
-      "price": 1000,
-      "rating": 4,
-      "stock": 12,
+      "price": 200000,
+      "rating": 5,
+      "stock": 2000,
       "thumbnail": "",
-      "title": "industries"
+      "title": "best device for sell"
     },
     {
-      "id": "40f7",
-      "brand": "gelexy",
-      "category": "leptop",
-      "description": "kdfuiawfsh",
-      "discountPercentage": 20,
-      "price": 200,
-      "rating": 3,
-      "stock": 50,
-      "thumbnail": "",
-      "title": "leptops"
-    },
-    {
-      "id": "35b2",
-      "brand": "nokia",
-      "category": "phone",
-      "description": "best phone ever",
+      "id": "f63e",
+      "brand": "bmw",
+      "category": "Mens Fashion",
+      "description": "best car ever",
       "discountPercentage": 200,
-      "price": 1000,
-      "rating": 4,
-      "stock": 12,
-      "thumbnail": "",
-      "title": "industries"
-    },
-    {
-      "id": "35b2",
-      "brand": "nokia",
-      "category": "phone",
-      "description": "best phone ever",
-      "discountPercentage": 200,
-      "price": 1000,
-      "rating": 4,
-      "stock": 12,
-      "thumbnail": "",
-      "title": "industries"
-    },
-    {
-      "id": "b1b2",
-      "brand": "tesla",
-      "category": "car",
-      "description": "best car manufecturing",
-      "discountPercentage": 200,
-      "price": 500,
-      "rating": 4,
+      "price": 300000,
+      "rating": 5,
       "stock": 200,
       "thumbnail": "",
-      "title": "industry"
-    },
-    {
-      "id": "40f7",
-      "brand": "gelexy",
-      "category": "leptop",
-      "description": "kdfuiawfsh",
-      "discountPercentage": 20,
-      "price": 200,
-      "rating": 3,
-      "stock": 50,
-      "thumbnail": "",
-      "title": "leptops"
+      "title": "brander car"
     }
+  ],
+  "categories": [
+    "Groceries & Pets",
+    "Health & Beauty",
+    "Mens Fashion",
+    "Womens Fashion",
+    "Mother & Baby"
   ]
 }

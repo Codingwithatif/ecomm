@@ -10,12 +10,26 @@ import { RouterLink } from '@angular/router';
   styleUrl: './cart.component.scss'
 })
 export class CartComponent implements OnInit{
-removeFromCart(_t5: any) {
-throw new Error('Method not implemented.');
-}
+
+cartProduct: any;
+
 ngOnInit(): void {
 
+this.getAllCartProds();
 
+}
+
+removeFromCart(id: any) {
+  fetch(`http://localhost:3000/cartProduct/${id}` ,{
+    method: 'DELETE',
+  })
+  .then(res => {
+  this.getAllCartProds();
+
+  })
+}
+
+private getAllCartProds() {
   fetch('http://localhost:3000/cartProduct')
   .then(response => response.json())
   .then(data => {
@@ -24,5 +38,4 @@ ngOnInit(): void {
 
   })
 }
-cartProduct: any;
 }

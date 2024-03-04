@@ -8,10 +8,19 @@ import { SellerAuthComponent } from './pages/seller-auth/seller-auth.component';
 import { AddProductComponent } from './pages/add-product/add-product.component';
 import { AuthGuard } from './pages/authGuard';
 import { CartComponent } from './pages/cart/cart.component';
+import { SellerComponent } from './pages/seller/seller.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { SearchComponent } from './pages/search/search.component';
 // import { CartComponent } from './cart/cart.component';
 
 
 export const routes: Routes = [
+
+
+  // { path: '', redirectTo: '/categories', pathMatch: 'full' },
+  { path: 'categories', component: CategoryComponent },
+  { path: 'products/:category', component: ProductListComponent },
+  //what
 
     {
         path: '', redirectTo: 'home' , pathMatch: 'full'
@@ -19,6 +28,11 @@ export const routes: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+    {
+      path: 'search',
+      component: SearchComponent
+
     },
 
     {
@@ -29,16 +43,27 @@ export const routes: Routes = [
     {
         path: 'add-product',
         component: AddProductComponent,
+        canActivate: [AuthGuard],
 
       },
     {
-      path: 'product-list',
+      path: 'product-list/:category',
       component: ProductListComponent,
+
+    },
+
+    {
+      path: 'seller',
+      component: SellerComponent,
 
     },
     {
       path: 'login',
       component: LoginComponent,
+    },
+    {
+      path: 'category',
+      component: CategoryComponent,
     },
     {
       path: 'cart',

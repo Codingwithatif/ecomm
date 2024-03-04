@@ -1,23 +1,13 @@
-<div class="container">
+<section class="container mt-5">
   <div class="row">
-    <div class="col-md-4" *ngFor="let product of products">
-      <div class="card mb-4 shadow" style="background-color: #333; color: #fff;">
-        <img class="card-img-top" [src]="product.thumbnail" alt="{{ product.title }}">
+    <div class="col-md-4 mb-4" *ngFor="let product of products">
+      <div class="card bg-dark text-light h-100">
         <div class="card-body">
-          <h5 class="card-title text-primary">{{ product.title }}</h5>
-          <p class="card-text">{{ product.description }}</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-0" style="background-color: #333;"> <strong style="color: #fff;">Brand:</strong> <span class="text-info">{{ product.brand }}</span></li>
-            <li class="list-group-item border-0" style="background-color: #333;"> <strong style="color: #fff;">Category:</strong> <span class="text-info">{{ product.category }}</span></li>
-            <li class="list-group-item border-0" style="background-color: #333;"> <strong style="color: #fff;">Price:</strong> <span class="text-success">${{ product.price }}</span></li>
-            <li class="list-group-item border-0" style="background-color: #333;"> <strong style="color: #fff;">Rating:</strong> <span class="text-warning">{{ product.rating }}</span></li>
-            <li class="list-group-item border-0" style="background-color: #333;"> <strong style="color: #fff;">Stock:</strong> <span class="text-danger">{{ product.stock }}</span></li>
-            <li class="list-group-item border-0" style="background-color: #333;"> <strong style="color: #fff;">Discount Percentage:</strong> <span class="text-primary">{{ product.discountPercentage }}%</span></li>
-          </ul>
-          <button class="btn btn-success btn-block mt-3 rounded-pill" style="background-color: #4CAF50; border-color: #4CAF50;" (click)="onAddtoCart(product)">Add to Cart</button>
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.category }}</p>
+          <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
         </div>
       </div>
     </div>
   </div>
-</div>
-
+</section>

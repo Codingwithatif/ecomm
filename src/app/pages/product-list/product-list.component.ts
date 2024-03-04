@@ -1,9 +1,11 @@
+import { CartService } from './../../cart.service';
 import { FormGroup, FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ProductService } from '../../product.service';
 @Component({
-  selector: 'app-product-list',
+  selector: 'product-list',
   standalone: true,
   imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './product-list.component.html',
@@ -11,33 +13,26 @@ import { CommonModule } from '@angular/common';
   encapsulation: ViewEncapsulation.None
 })
 export class ProductListComponent implements OnInit{
-onAddtoCart(product: any) {
 
-  fetch('http://localhost:3000/cartProduct', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(product)
-  })
-}
-productForm: any;
+    products: any[] = [];
 
-products: any[] = [] ;
-  router: any;
+    constructor(
+      private route: ActivatedRoute,
+      private productService: ProductService,
+     private CartService: CartService// Inject CartService
+    ) { }
 
-constructor() {}
-
-ngOnInit() {
-  // Retrieve product data from central storage (e.g., service, array)
-  fetch('http://localhost:3000/products')
-.then(response => response.json())
-.then(data => {
-  this.products = data;
+    ngOnInit(): void {
+      this.route.params.subscribe(params => {
+        const category = params['category'];
+        this.products = this.productService.getProductsByCategory(category);
 console.log(this.products);
 
-})
+      });
+    }
 
-}
-navigateToAddProduct() {
-  this.router.navigate(['/add-product']);
-}
-}
+    addToCart(product: { name: string, category: string }): void {
+      this.CartService.addToCart(product); // Call addToCart method from CartService
+
+ }
+  }
