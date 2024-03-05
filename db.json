@@ -23,6 +23,18 @@
       "stock": 200,
       "thumbnail": "",
       "title": "brander car"
+    },
+    {
+      "id": "5c54",
+      "brand": "delo",
+      "category": "",
+      "description": "best mobile oil",
+      "discountPercentage": 12,
+      "price": 1000,
+      "rating": 5,
+      "stock": 120,
+      "thumbnail": "",
+      "title": "oil company"
     }
   ],
   "cartProduct": [
@@ -49,6 +61,54 @@
       "stock": 200,
       "thumbnail": "",
       "title": "brander car"
+    },
+    {
+      "id": "5c54",
+      "brand": "delo",
+      "category": "",
+      "description": "best mobile oil",
+      "discountPercentage": 12,
+      "price": 1000,
+      "rating": 5,
+      "stock": 120,
+      "thumbnail": "",
+      "title": "oil company"
+    },
+    {
+      "id": "5c54",
+      "brand": "delo",
+      "category": "",
+      "description": "best mobile oil",
+      "discountPercentage": 12,
+      "price": 1000,
+      "rating": 5,
+      "stock": 120,
+      "thumbnail": "",
+      "title": "oil company"
+    },
+    {
+      "id": "f63e",
+      "brand": "bmw",
+      "category": "Mens Fashion",
+      "description": "best car ever",
+      "discountPercentage": 200,
+      "price": 300000,
+      "rating": 5,
+      "stock": 200,
+      "thumbnail": "",
+      "title": "brander car"
+    },
+    {
+      "id": "b79f",
+      "brand": "iphone",
+      "category": "Groceries & Pets",
+      "description": "best phone",
+      "discountPercentage": 200,
+      "price": 200000,
+      "rating": 5,
+      "stock": 2000,
+      "thumbnail": "",
+      "title": "best device for sell"
     }
   ],
   "categories": [

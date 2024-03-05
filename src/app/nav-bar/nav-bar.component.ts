@@ -12,7 +12,7 @@ import { SearchComponent } from "../pages/search/search.component";
 })
 export class NavBarComponent {
 onLogoutClicked() {
-throw new Error('Method not implemented.');
+
 }
 isSellerLoggedIn: any;
 
